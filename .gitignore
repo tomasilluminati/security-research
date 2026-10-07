@@ -1,0 +1,25 @@
+!.gitignore
+
+# Local system and editor files
+.DS_Store
+.obsidian/
+.idea/
+.trash/
+*.swp
+*.tmp
+
+# Local artifacts and secrets
+.env
+.env.*
+*.log
+node_modules/
+coverage/
+dist/
+*.tgz
+.idea
+./.idea
+./CVE-2026-106550/.idea
+
+# Review each CVE note before adding it to the public repository.
+CVE-*/
+!CVE-2026-106550/
