@@ -1,7 +1,5 @@
 # Security Research
 
----
-
 Public CVE write-ups by Tomas Illuminati, Cyber Security Researcher & Threat Intelligence Analyst. Each note records the affected scope, root cause, a local check, and primary references.
 
 | CVE | Product | Finding | Write-up |
