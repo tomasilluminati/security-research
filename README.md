@@ -5,6 +5,7 @@ Public CVE write-ups by Tomas Illuminati, Cyber Security Researcher & Threat Int
 | CVE | Product | Finding | Write-up |
 | --- | --- | --- | --- |
 | [CVE-2026-106550](https://www.cve.org/CVERecord?id=CVE-2026-106550) | Mozilla node-convict | Denial of service through `config.set()` | [Read](CVE-2026-106550/README.md) |
+| [CVE-2026-13723](https://www.cve.org/CVERecord?id=CVE-2026-13723) | Develar app-builder | Arbitrary file overwrite during ZIP extraction | [Read](CVE-2026-13723/README.md) |
 
 Reports are added after coordinated disclosure and review.
 

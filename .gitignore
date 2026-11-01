@@ -1,25 +1,54 @@
 !.gitignore
 
-# Local system and editor files
 .DS_Store
-.obsidian/
+Thumbs.db
 .idea/
+.vscode/
+.obsidian/
 .trash/
+*.iml
 *.swp
-*.tmp
+*.swo
+*~
 
-# Local artifacts and secrets
 .env
 .env.*
 *.log
-node_modules/
-coverage/
-dist/
-*.tgz
-.idea
-./.idea
-./CVE-2026-106550/.idea
+*.tmp
+*.temp
 
-# Review each CVE note before adding it to the public repository.
+node_modules/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.coverage.*
+coverage/
+coverage.out
+build/
+dist/
+out/
+bin/
+target/
+*.test
+*.prof
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.dmg
+*.pkg
+*.app/
+*.dSYM/
+*.tgz
+go.work
+go.work.sum
+
 CVE-*/
 !CVE-2026-106550/
+!CVE-2026-13723/
+CVE-2026-13723/poc/cve-2026-13723-poc
+CVE-2026-13723/poc/poc
