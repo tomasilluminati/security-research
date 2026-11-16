@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="50" viewBox="0 0 84 50" role="img" aria-labelledby="title desc">
+  <title id="title">CVSS 3.1: 8.4 High</title>
+  <desc id="desc">Severity score on a ten-point scale</desc>
+  <defs><clipPath id="frame"><rect width="84" height="50" rx="7"/></clipPath></defs>
+  <g clip-path="url(#frame)">
+    <rect width="84" height="50" fill="#131B29"/>
+    <rect width="4" height="50" fill="#D08A68"/>
+  </g>
+  <rect x="0.5" y="0.5" width="83" height="49" rx="6.5" fill="none" stroke="#303C4D"/>
+  <text x="14" y="24" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.5">8.4</text>
+  <text x="14" y="37" fill="#D08A68" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.6">HIGH</text>
+  <rect x="14" y="42" width="58" height="2.5" rx="1.25" fill="#344052"/>
+  <rect x="14" y="42" width="48.72" height="2.5" rx="1.25" fill="#D08A68"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="250" viewBox="0 0 480 250" role="img" aria-labelledby="title desc">
+  <title id="title">Deno 2.7.13 deny rule and two spellings of one path</title>
+  <desc id="desc">A request by the name in the deny rule matches the rule and is denied. A request by the other spelling of the same name does not match, and APFS opens the same file.</desc>
+  <defs>
+    <marker id="tip" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#8293A8"/>
+    </marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="479" height="249" rx="9.5" fill="#131B29" stroke="#303C4D"/>
+  <text x="24" y="36" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Deno 2.7.13</text>
+  <text x="24" y="64" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.9">REQUEST</text>
+  <text x="206" y="64" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.9">DENY RULE</text>
+  <text x="346" y="64" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.9">RESULT</text>
+
+  <rect x="24.5" y="74.5" width="152" height="52" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="100" y="97" text-anchor="middle" fill="#E9EDF3" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="14">secret_café.txt</text>
+  <text x="100" y="115" text-anchor="middle" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5">é as U+00E9</text>
+  <rect x="206.5" y="74.5" width="110" height="52" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="261" y="105" text-anchor="middle" fill="#7FB7A6" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">match</text>
+  <rect x="346.5" y="74.5" width="110" height="52" rx="6" fill="#1B2536" stroke="#7FB7A6"/>
+  <text x="401" y="105" text-anchor="middle" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Denied</text>
+  <path d="M177 100H203" stroke="#8293A8" stroke-width="1.5" marker-end="url(#tip)"/>
+  <path d="M317 100H343" stroke="#8293A8" stroke-width="1.5" marker-end="url(#tip)"/>
+
+  <rect x="24.5" y="142.5" width="152" height="52" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="100" y="165" text-anchor="middle" fill="#E9EDF3" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="14">secret_café.txt</text>
+  <text x="100" y="183" text-anchor="middle" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5">é as e plus U+0301</text>
+  <rect x="206.5" y="142.5" width="110" height="52" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="261" y="173" text-anchor="middle" fill="#D08A68" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">no match</text>
+  <rect x="346.5" y="142.5" width="110" height="52" rx="6" fill="#1B2536" stroke="#D08A68"/>
+  <text x="401" y="173" text-anchor="middle" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">File opened</text>
+  <path d="M177 168H203" stroke="#8293A8" stroke-width="1.5" marker-end="url(#tip)"/>
+  <path d="M317 168H343" stroke="#8293A8" stroke-width="1.5" marker-end="url(#tip)"/>
+
+  <text x="24" y="226" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="13">Both spellings resolve to one file on APFS.</text>
+</svg>

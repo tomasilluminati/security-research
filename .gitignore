@@ -5,6 +5,7 @@ Thumbs.db
 .idea/
 .vscode/
 .obsidian/
+.local/
 .trash/
 *.iml
 *.swp
@@ -50,5 +51,11 @@ go.work.sum
 CVE-*/
 !CVE-2026-106550/
 !CVE-2026-13723/
+!CVE-2026-14978/
+!CVE-2026-23950/
+!CVE-2026-45110/
+CVE-2026-45110/poc/
+!CVE-2026-49401/
+!CVE-2026-59890/
 CVE-2026-13723/poc/cve-2026-13723-poc
 CVE-2026-13723/poc/poc

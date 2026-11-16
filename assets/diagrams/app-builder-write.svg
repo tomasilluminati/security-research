@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="304" viewBox="0 0 480 304" role="img" aria-labelledby="title desc">
+  <title id="title">How a ZIP entry is written outside the output directory</title>
+  <desc id="desc">The symlink entry ss creates a link inside the output directory. The regular file entry ß resolves to the same directory entry on APFS, so its write follows the link to a file outside the output directory.</desc>
+  <defs>
+    <marker id="tip" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#8293A8"/>
+    </marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="479" height="303" rx="9.5" fill="#131B29" stroke="#303C4D"/>
+  <text x="24" y="34" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.9">ZIP ENTRIES</text>
+  <text x="178" y="34" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.9">INSIDE out/</text>
+  <text x="332" y="34" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.9">OUTSIDE out/</text>
+
+  <rect x="24.5" y="48.5" width="124" height="70" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="86" y="74" text-anchor="middle" fill="#E9EDF3" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="16">ss</text>
+  <text x="86" y="93" text-anchor="middle" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5">symlink entry</text>
+  <text x="86" y="108" text-anchor="middle" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5">target outside out/</text>
+
+  <rect x="24.5" y="148.5" width="124" height="70" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="86" y="174" text-anchor="middle" fill="#E9EDF3" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="16">ß</text>
+  <text x="86" y="193" text-anchor="middle" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5">regular file entry</text>
+  <text x="86" y="208" text-anchor="middle" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5">contains PAYLOAD</text>
+
+  <rect x="178.5" y="83.5" width="124" height="100" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="240" y="112" text-anchor="middle" fill="#E9EDF3" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="14">out/ss</text>
+  <text x="240" y="132" text-anchor="middle" fill="#E9EDF3" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="14">out/ß</text>
+  <text x="240" y="154" text-anchor="middle" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5">one directory entry,</text>
+  <text x="240" y="169" text-anchor="middle" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5">now a symlink</text>
+
+  <rect x="332.5" y="83.5" width="124" height="100" rx="6" fill="#1B2536" stroke="#D08A68"/>
+  <text x="394" y="120" text-anchor="middle" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">victim file</text>
+  <text x="394" y="143" text-anchor="middle" fill="#9AABBE" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="12">ORIGINAL</text>
+  <text x="394" y="162" text-anchor="middle" fill="#D08A68" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700">becomes PAYLOAD</text>
+
+  <path d="M149 86L175 112" stroke="#8293A8" stroke-width="1.5" fill="none" marker-end="url(#tip)"/>
+  <path d="M149 182L175 156" stroke="#8293A8" stroke-width="1.5" fill="none" marker-end="url(#tip)"/>
+  <path d="M303 134H329" stroke="#8293A8" stroke-width="1.5" fill="none" marker-end="url(#tip)"/>
+
+  <text x="24" y="248" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="12.5">1  The symlink entry creates out/ss.</text>
+  <text x="24" y="266" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="12.5">2  The file entry opens out/ß, which APFS resolves to out/ss.</text>
+  <text x="24" y="284" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="12.5">3  The write follows the link to the outside file.</text>
+</svg>

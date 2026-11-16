@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="318" viewBox="0 0 480 318" role="img" aria-labelledby="title desc">
+  <title id="title">Path reservations in tar 7.5.3 and 7.5.4</title>
+  <desc id="desc">In tar 7.5.3 the entries collision_ss and collision_ß get two reservation keys and run at the same time. In tar 7.5.4 they share one key and the second entry waits for the first.</desc>
+  <rect x="0.5" y="0.5" width="479" height="317" rx="9.5" fill="#131B29" stroke="#303C4D"/>
+
+  <text x="24" y="36" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">tar 7.5.3</text>
+  <text x="104" y="36" fill="#D08A68" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="700">two keys, both entries run at once</text>
+  <rect x="236" y="50" width="160" height="72" fill="#D08A68" opacity="0.13"/>
+  <path d="M236 50V122M396 50V122" stroke="#D08A68" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="24" y="73" fill="#C6D0DC" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="14">collision_ss</text>
+  <rect x="160" y="58" width="236" height="20" rx="4" fill="#D08A68"/>
+  <text x="24" y="109" fill="#C6D0DC" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="14">collision_ß</text>
+  <rect x="236" y="94" width="220" height="20" rx="4" fill="#D08A68"/>
+  <text x="316" y="140" text-anchor="middle" fill="#D08A68" font-family="Arial, Helvetica, sans-serif" font-size="12.5">both hold the path</text>
+
+  <path d="M24 160H456" stroke="#303C4D"/>
+
+  <text x="24" y="192" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">tar 7.5.4</text>
+  <text x="104" y="192" fill="#7FB7A6" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="700">one key, the second entry waits</text>
+  <text x="24" y="229" fill="#C6D0DC" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="14">collision_ss</text>
+  <rect x="160" y="214" width="140" height="20" rx="4" fill="#7FB7A6"/>
+  <text x="24" y="265" fill="#C6D0DC" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="14">collision_ß</text>
+  <rect x="160" y="250" width="140" height="20" rx="4" fill="none" stroke="#56657A" stroke-dasharray="4 4"/>
+  <text x="230" y="264.5" text-anchor="middle" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="12">queued</text>
+  <rect x="308" y="250" width="148" height="20" rx="4" fill="#7FB7A6"/>
+
+  <path d="M160 292H450" stroke="#56657A" stroke-width="1.2"/>
+  <path d="M456 292L447 287.5V296.5z" fill="#56657A"/>
+  <text x="24" y="296.5" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="12.5">time</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="50" viewBox="0 0 84 50" role="img" aria-labelledby="title desc">
+  <title id="title">CVSS 3.1 score pending</title>
+  <desc id="desc">No public severity score has been confirmed</desc>
+  <defs><clipPath id="frame"><rect width="84" height="50" rx="7"/></clipPath></defs>
+  <g clip-path="url(#frame)">
+    <rect width="84" height="50" fill="#131B29"/>
+    <rect width="4" height="50" fill="#8293A8"/>
+  </g>
+  <rect x="0.5" y="0.5" width="83" height="49" rx="6.5" fill="none" stroke="#303C4D"/>
+  <text x="14" y="24" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.5">TBD</text>
+  <text x="14" y="37" fill="#9EADC0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.6">PENDING</text>
+  <path d="M14 43.5H72" stroke="#6A798D" stroke-width="2.5" stroke-dasharray="2.5 4.5"/>
+</svg>
