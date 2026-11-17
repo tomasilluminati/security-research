@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="276" viewBox="0 0 480 276" role="img" aria-labelledby="title desc">
+  <title id="title">One DNS message with a pointer chain and many questions</title>
+  <desc id="desc">The message holds a chain of 8,000 compression pointers and 8,253 questions. Every question points at the head of the chain, so the decoder walks all 8,000 pointers once per question.</desc>
+  <defs>
+    <marker id="tip" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#8293A8"/>
+    </marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="479" height="275" rx="9.5" fill="#131B29" stroke="#303C4D"/>
+  <text x="24" y="34" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.9">CHAIN OF 8,000 COMPRESSION POINTERS</text>
+
+  <rect x="24.5" y="48.5" width="84" height="40" rx="6" fill="#1B2536" stroke="#D08A68"/>
+  <text x="66" y="73" text-anchor="middle" fill="#E9EDF3" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="13">ptr 1</text>
+  <rect x="134.5" y="48.5" width="84" height="40" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="176" y="73" text-anchor="middle" fill="#E9EDF3" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="13">ptr 2</text>
+  <text x="258" y="74" text-anchor="middle" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="16">...</text>
+  <rect x="298.5" y="48.5" width="84" height="40" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="340" y="73" text-anchor="middle" fill="#E9EDF3" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="13">ptr 8000</text>
+  <rect x="408.5" y="48.5" width="48" height="40" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="432" y="73" text-anchor="middle" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="12">end</text>
+  <path d="M109 68H131" stroke="#8293A8" stroke-width="1.5" marker-end="url(#tip)"/>
+  <path d="M219 68H239" stroke="#8293A8" stroke-width="1.5" marker-end="url(#tip)"/>
+  <path d="M277 68H295" stroke="#8293A8" stroke-width="1.5" marker-end="url(#tip)"/>
+  <path d="M383 68H405" stroke="#8293A8" stroke-width="1.5" marker-end="url(#tip)"/>
+
+  <text x="24" y="208" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.9">8,253 QUESTIONS, ALL NAMED BY PTR 1</text>
+  <rect x="24.5" y="144.5" width="104" height="40" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="76" y="169" text-anchor="middle" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="13">question 1</text>
+  <rect x="144.5" y="144.5" width="104" height="40" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="196" y="169" text-anchor="middle" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="13">question 2</text>
+  <text x="280" y="170" text-anchor="middle" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="16">...</text>
+  <rect x="312.5" y="144.5" width="144" height="40" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="384" y="169" text-anchor="middle" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="13">question 8253</text>
+  <path d="M60 143V92" stroke="#8293A8" stroke-width="1.5" marker-end="url(#tip)"/>
+  <path d="M180 143L84 92" stroke="#8293A8" stroke-width="1.5" marker-end="url(#tip)"/>
+  <path d="M360 143L96 92" stroke="#8293A8" stroke-width="1.5" marker-end="url(#tip)"/>
+
+  <text x="24" y="238" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="13">Each question walks the whole chain again.</text>
+  <text x="24" y="257" fill="#D08A68" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">8,253 x 8,000 = about 66 million pointer reads</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="270" viewBox="0 0 480 270" role="img" aria-labelledby="title desc">
+  <title id="title">How authd checks a group name in Wazuh 4.14.4 and 4.14.5</title>
+  <desc id="desc">In 4.14.4 authd only checks that the group directory exists, and the name two dots resolves to the parent directory, so the agent is enrolled. In 4.14.5 the name itself is rejected.</desc>
+  <defs>
+    <marker id="tip" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#8293A8"/>
+    </marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="479" height="269" rx="9.5" fill="#131B29" stroke="#303C4D"/>
+  <text x="24" y="34" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.9">GROUP SENT</text>
+  <text x="138" y="34" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.9">CHECK IN AUTHD</text>
+  <text x="362" y="34" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.9">RESULT</text>
+
+  <text x="24" y="62" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">4.14.4</text>
+  <rect x="24.5" y="72.5" width="84" height="56" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="66" y="106" text-anchor="middle" fill="#E9EDF3" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="17">..</text>
+  <rect x="138.5" y="72.5" width="194" height="56" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="235" y="95" text-anchor="middle" fill="#E9EDF3" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="12">etc/shared/..</text>
+  <text x="235" y="114" text-anchor="middle" fill="#D08A68" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700">opens as etc/, so it exists</text>
+  <rect x="362.5" y="72.5" width="94" height="56" rx="6" fill="#1B2536" stroke="#D08A68"/>
+  <text x="409" y="105" text-anchor="middle" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Enrolled</text>
+  <path d="M109 100H135" stroke="#8293A8" stroke-width="1.5" marker-end="url(#tip)"/>
+  <path d="M333 100H359" stroke="#8293A8" stroke-width="1.5" marker-end="url(#tip)"/>
+
+  <text x="24" y="160" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">4.14.5</text>
+  <rect x="24.5" y="170.5" width="84" height="56" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="66" y="204" text-anchor="middle" fill="#E9EDF3" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="17">..</text>
+  <rect x="138.5" y="170.5" width="194" height="56" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="235" y="193" text-anchor="middle" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="12.5">group name is validated</text>
+  <text x="235" y="212" text-anchor="middle" fill="#7FB7A6" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700">Invalid group name</text>
+  <rect x="362.5" y="170.5" width="94" height="56" rx="6" fill="#1B2536" stroke="#7FB7A6"/>
+  <text x="409" y="203" text-anchor="middle" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Refused</text>
+  <path d="M109 198H135" stroke="#8293A8" stroke-width="1.5" marker-end="url(#tip)"/>
+  <path d="M333 198H359" stroke="#8293A8" stroke-width="1.5" marker-end="url(#tip)"/>
+
+  <text x="24" y="252" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="12.5">Paths are relative to /var/ossec.</text>
+</svg>

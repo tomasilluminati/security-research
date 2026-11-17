@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="250" viewBox="0 0 480 250" role="img" aria-labelledby="title desc">
+  <title id="title">Which reference goxmldsig 1.5.0 compares</title>
+  <desc id="desc">The loop matches the first reference, which holds the digest of the original content, but the pointer ends on the last reference, which holds the digest of the modified content.</desc>
+  <defs>
+    <marker id="tip" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#8293A8"/>
+    </marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="479" height="249" rx="9.5" fill="#131B29" stroke="#303C4D"/>
+  <text x="24" y="34" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.9">REFERENCES IN SIGNEDINFO</text>
+  <text x="312" y="34" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.9">THE LOOP</text>
+
+  <rect x="24.5" y="48.5" width="236" height="58" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="38" y="72" fill="#E9EDF3" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="14">URI="#target"</text>
+  <text x="38" y="92" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="12">digest of the original content</text>
+
+  <rect x="24.5" y="124.5" width="236" height="58" rx="6" fill="#1B2536" stroke="#3A475A"/>
+  <text x="38" y="148" fill="#E9EDF3" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="14">URI="#dummy"</text>
+  <text x="38" y="168" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="12">digest of the modified content</text>
+
+  <rect x="312.5" y="48.5" width="144" height="58" rx="6" fill="#1B2536" stroke="#7FB7A6"/>
+  <text x="384" y="74" text-anchor="middle" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="700">ID matches</text>
+  <text x="384" y="92" text-anchor="middle" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="12">on this reference</text>
+
+  <rect x="312.5" y="124.5" width="144" height="58" rx="6" fill="#1B2536" stroke="#D08A68"/>
+  <text x="384" y="150" text-anchor="middle" fill="#E9EDF3" font-family="Arial, Helvetica, sans-serif" font-size="13.5" font-weight="700">pointer ends</text>
+  <text x="384" y="168" text-anchor="middle" fill="#D08A68" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700">on the last one</text>
+
+  <path d="M311 78H265" stroke="#8293A8" stroke-width="1.5" marker-end="url(#tip)"/>
+  <path d="M311 154H265" stroke="#8293A8" stroke-width="1.5" marker-end="url(#tip)"/>
+
+  <text x="24" y="218" fill="#9AABBE" font-family="Arial, Helvetica, sans-serif" font-size="13">The element is compared with the digest of the last reference.</text>
+</svg>
